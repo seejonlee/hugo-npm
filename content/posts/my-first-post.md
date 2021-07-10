@@ -1,8 +1,11 @@
 ---
-title: "My First Post"
-date: 2021-07-09T12:35:20-07:00
+title: Post in Forestry
+date: 2021-07-09T12:35:20.000-07:00
+tags:
+- foo
+- bar
 draft: true
-tags: ["foo", "bar"]
+
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
