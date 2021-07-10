@@ -1,6 +1,16 @@
 {{ define "main" }}
 <div id="home-jumbotron" class="default jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
-  <div id="test-this">hello will this move?</div>
+	<h1 class="title">{{ .Site.Title }}</h1>
+	<div id="test-this">hello will this move?</div>
+	<div id='count-component'></div>
+	{{ $shims := dict }}
+	{{ $defines := dict }}
+	{{ if hugo.IsProduction }}
+	{{ $shims = dict "react" "js/shims/react.js"  "react-dom" "js/shims/react-dom.js" }}
+	{{ else }}
+	{{ $defines = dict "process.env.NODE_ENV" `"development"` }}
+	{{ end }}
+	{{ $js := resources.Get "js/components/Count.jsx" | js.Build (dict "shims" $shims "defines" $defines ) }}
+	<script src="{{ $js.RelPermalink }}"></script>
 </div>
 {{ end }}
