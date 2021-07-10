@@ -4,7 +4,6 @@ date: 2021-07-09T12:35:20.000-07:00
 tags:
 - foo
 - bar
-draft: true
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
