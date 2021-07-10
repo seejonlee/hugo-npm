@@ -9,7 +9,7 @@ export default class GSAPTest {
 	}
 
 	run() {
-		console.log(document.getElementById(`${this.nodeId}`));
-		gsap.to(`#${this.nodeId}`, {duration: 1, x: 100});
+		console.log(document.getElementById(`${ this.nodeId }`));
+		gsap.to(`#${ this.nodeId }`, {duration: 1, x: 200});
 	}
 }

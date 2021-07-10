@@ -14,11 +14,29 @@
   "author": "seejonlee",
   "license": "ISC",
   "devDependencies": {
+    "@weareenvoy/eslint-config-envoy": "^1.0.1",
+    "@weareenvoy/stylelint-config-envoy": "^1.0.0",
     "autoprefixer": "^10.2.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-standard": "^5.0.0",
     "hugo-bin": "^0.73.0",
     "hugo-extended": "^0.85.0",
     "postcss": "^8.2.9",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^8.3.1",
+    "stylelint": "^8.4.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-no-unsupported-browser-features": "^5.0.1",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^1.5.2"
   },
   "dependencies": {
     "gsap": "^3.7.0"
