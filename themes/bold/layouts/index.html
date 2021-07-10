@@ -5,12 +5,14 @@
 	<div id='count-component'></div>
 	{{ $shims := dict }}
 	{{ $defines := dict }}
+	{{ $params := dict }}
 	{{ if hugo.IsProduction }}
 	{{ $shims = dict "react" "js/shims/react.js"  "react-dom" "js/shims/react-dom.js" }}
 	{{ else }}
 	{{ $defines = dict "process.env.NODE_ENV" `"development"` }}
 	{{ end }}
-	{{ $js := resources.Get "js/components/Count.jsx" | js.Build (dict "shims" $shims "defines" $defines ) }}
+	{{ $params = dict "api" "https://example.org/api" }}
+	{{ $js := resources.Get "js/components/Count.jsx" | js.Build (dict "params" $params "shims" $shims "defines" $defines) }}
 	<script src="{{ $js.RelPermalink }}"></script>
 </div>
 {{ end }}

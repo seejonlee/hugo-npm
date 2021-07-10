@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+// eslint-disable-next-line import/no-unresolved
+import * as params from '@params';
 
 const Count = () => {
-	const [count, setCount] = useState(0);
+	const [count, setCount] = React.useState(0);
+	console.log({params});
+	console.log(params.api);
 	return (
 		<div className={`count`}>
 			<span>{count}</span>
