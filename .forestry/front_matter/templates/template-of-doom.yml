@@ -8,5 +8,6 @@ fields:
     required: false
   label: Title
 pages:
+- content/platform.md
 - content/posts/another-new-one.md
 - content/posts/this-is-new.md
